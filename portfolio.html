@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+      <!-- AOS CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+</head>
+<body>
+ 
+    <div class="main-container">
+  <!-- Header -section -->
+  <section class="header left">
+    <nav class="navbar">
+      <div class="profile">
+        <img src="./assets/images/about_pic.png" alt="" />
+        <div class="name">
+          <h4>Ritik Sharma</h4>
+        </div>
+      </div>
+      <ul id="lists">
+        <li>
+          <a href="./home.html">
+            <i class="fas fa-home"></i>
+            home
+          </a>
+        </li>
+        <li>
+          <a href="./about.html">
+            <i class="far fa-user-circle"></i>
+            about me
+          </a>
+        </li>
+        <li>
+          <a href="./resume.html">
+            <i class="far fa-address-card"></i>
+            resume
+          </a>
+        </li>
+        <li>
+          <a href="./portfolio.html">
+            <i class="fas fa-briefcase"></i>
+            portfolio
+          </a>
+        </li>
+        <li>
+          <a href="./contact.html">
+            <i class="far fa-envelope"></i>
+            contact
+          </a>
+        </li>
+      </ul>
+   
+    </nav>
+  </section>
+    <!-- Portfolio_Section -->
+    <div class="container" data-aos="fade-left" data-aos-delay = "250"  data-aos-duration = "2000">
+    <section class="portfolio">
+        <div class="portfolioData">
+            <h3>Portfolio</h3>
+            <span>My Best Works</span>
+            <div class="work">
+                <ul class="work_lists">
+                    <li data-target="all" id="all" >All</li>
+                    <li data-target="javascript" id="js">Javascript</li>
+                    <li data-target="web" id="design">Web Design</li>
+                    
+                </ul>
+                <div class="portfolio_wrapper" id="courses">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+    </div>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/portfolio.js"></script>
+      <!-- AOS DAta -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    
+  </script>
+</body>
+</html>

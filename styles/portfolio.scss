@@ -1,0 +1,142 @@
+@import '../variables/color';
+@import '../variables/font';
+@import '../variables/mixins';
+
+.portfolio {
+  padding: 50px;
+  position: relative;
+  @include mobile{
+    padding: 0;
+
+  }
+
+  .portfolioData {
+    display: flex;
+    flex-direction: column;
+position: relative;
+    h3 {
+      color: $text-gray-1;
+      font-size: 70px;
+      font-family: $font-family_2;
+      text-align: center;
+    }
+    span {
+      position: absolute;
+      top:  7%;
+      left: 50%;
+      @include mobile{
+        top: 5%;
+
+      }
+      
+      background-color: $profile;
+      padding: 2px 5px 2px 46px;
+      width: fit-content;
+      color: $white;
+      font-size: 25px;
+      text-align: center;
+    }
+    .work {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      align-items: center;
+      flex-direction: column;
+      .work_lists {
+        display: flex;
+        list-style: none;
+        font-family: $font-family_2;
+        padding-top: 65px;
+        gap: 40px;
+        width: 100%;
+      
+        justify-content: center;
+        li {
+          cursor: pointer;
+          padding: 5px 20px;
+          // border-radius: 5px;
+          color: $white;
+          border-bottom: 2px solid $profile;
+        }
+        li:hover{
+          background: $white;
+          border-radius: 5px;
+          transition: all 1s ease;
+          border-bottom:  none;
+          color: $text-gray-1;
+
+        }
+        li:active{
+          background: $profile;
+        }
+        li:visited{
+          background: $primary-bg-color;
+        }
+
+      }
+      
+      .portfolio_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+        list-style: none;
+        gap: 10px;
+        width: 100%;
+        justify-content: center;
+        font-family: $font-family_2;
+        color: $text-gray-1;
+        .course_box{
+          overflow: hidden;
+          width: 30%;
+          height: 210px;
+          border-radius: 10px;
+          position: relative;
+          
+          img{
+            border-radius: 10px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            object-fit: cover;
+          }
+          img:hover{
+            transform: scale(1.5);
+            border-radius: 10px;
+            transition: all 1s ease;
+            cursor: pointer;
+            
+          }
+          h1{
+            color: $white;
+            position: absolute;
+            z-index: 1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            font-size: 2rem;
+
+          }
+        }
+
+      
+      }
+    }
+  }
+}
+
+// Custom scrollBar;
+
+.portfolio::-webkit-scrollbar {
+  width: 5px;
+}
+.portfolio::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: chocolate;
+}
+.portfolio::-webkit-scrollbar-track {
+  border-radius: 10px;
+  margin: 10px;
+  background-color: $text-gray-1;
+}

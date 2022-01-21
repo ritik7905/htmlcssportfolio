@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Ritik Sharma</title>
+    <!-- AOS CDN -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+<!-- =======================fonts=========================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <!-- ====================Carousel==================== -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Jquery CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+      integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ====================Styles===================== -->
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+  </head>
+
+  <body onload="myLoader()">
+    <!-- Loader in site -->
+
+    <div id="loading">
+
+    </div>
+
+    <!-- ===================================== -->
+    <div class="main-container">
+      <div class="menu" id="ham_menu">
+        <i class="fas fa-bars"></i>
+      </div>
+      <!-- Header -section -->
+      <section class="header left">
+        <nav class="navbar">
+          
+          <div class="profile">
+            <!-- <i class="fas fa-user-alt"></i> -->
+            <img src="./assets/images/about_pic.png" alt="" />
+            <div class="name">
+              <h4>Ritik Sharma</h4>
+            </div>
+          </div>
+          <ul id="lists">
+            <li class="active">
+              <a href="./home.html">
+                <i class="fas fa-home"></i>
+                home
+              </a>
+            </li>
+            <li>
+              <a href="./about.html">
+                <i class="far fa-user-circle"></i>
+                about me
+              </a>
+            </li>
+            <li>
+              <a href="./resume.html">
+                <i class="far fa-address-card"></i>
+                resume
+              </a>
+            </li>
+            <li>
+              <a href="./portfolio.html">
+                <i class="fas fa-briefcase"></i>
+                portfolio
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html">
+                <i class="far fa-envelope"></i>
+                contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <!-- Intro section -->
+      <section class="intro">
+        <div
+          class="data"
+          data-aos="zoom-in-down"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
+          <h2>Ritik Sharma</h2>
+          <!-- <p>Frontend-developer</p> -->
+          <div class="owl-carousel owl-theme">
+            <div class="item"><h4 class="slider">Frontend-developer</h4></div>
+            <div class="item"><h4 class="slider">Web-Designer</h4></div>
+            <div class="item"><h4 class="slider">Developer</h4></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ========================================================= -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/home.js"></script>
+    <script src="./js/header.js"></script>
+    <!-- AOS DAta -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
